@@ -16,4 +16,4 @@ Plans, scripts and finished videos for the Kapi's World YouTube channel.
 1. Scripts are written into `plan/`, the owner approves them.
 2. Clips are generated, then edited with ffmpeg (join the two 15 s clips, then `scripts/mix_music.py` on the joined 30 s file).
 3. The owner reviews the final video.
-4. Upload is private with metadata and the made-for-kids flag; publishing is done by the owner after approval.
+4. Upload is private with metadata and the made-for-kids flag; publishing is done by the owner after approval. The upload runs from the cloud: see `plan/cloud-upload.md` (credentials in the environment variable `YT_TOKEN_JSON`, never in the repo) and `plan/youtube-seo.md` (titles, descriptions, hashtags).
