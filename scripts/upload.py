@@ -1,7 +1,10 @@
 """Upload a video PRIVATE (owner publishes manually in YouTube Studio).
 
 Usage:
-    python scripts/upload.py video.mp4 "Title" "Description" --tags kapi,capybara
+    python scripts/upload.py video.mp4 "Title" "Description" --made-for-kids no --tags kapi,capybara
+
+--made-for-kids is required on purpose: it must reflect who the video is
+really for (YouTube/COPPA rule), not a preference.
 """
 import argparse
 from pathlib import Path
@@ -17,6 +20,7 @@ def main():
     p.add_argument("video")
     p.add_argument("title")
     p.add_argument("description")
+    p.add_argument("--made-for-kids", required=True, choices=["yes", "no"])
     p.add_argument("--tags", default="")
     p.add_argument("--thumbnail")
     a = p.parse_args()
@@ -27,7 +31,7 @@ def main():
         "snippet": {"title": a.title, "description": a.description,
                     "tags": [t for t in a.tags.split(",") if t], "categoryId": "1"},
         "status": {"privacyStatus": "private",
-                   "selfDeclaredMadeForKids": True,
+                   "selfDeclaredMadeForKids": a.made_for_kids == "yes",
                    "containsSyntheticMedia": True},
     }
     req = yt.videos().insert(part="snippet,status", body=body,
