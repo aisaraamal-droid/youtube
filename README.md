@@ -7,8 +7,8 @@ Plans, scripts and finished videos for the Kapi's World YouTube channel.
 ## Layout
 
 - `plan/` content plan and episode scripts
-- `scripts/` pipeline code (generate, edit with ffmpeg, upload); `mix_music.py` adds a ducked music bed
-- `music/` track registry (`tracks.csv`); the audio files themselves are git-ignored
+- `scripts/` pipeline code (generate, edit with ffmpeg, upload); `make_theme.py` renders our original theme, `mix_music.py` adds a ducked music bed
+- `music/` track registry (`tracks.csv`), our own theme in `music/original/`; other audio files are git-ignored
 - `videos/` finished videos (large files: prefer Releases or Git LFS)
 
 ## Workflow
