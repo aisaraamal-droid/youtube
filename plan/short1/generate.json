@@ -1,0 +1,33 @@
+{
+ "refs": [
+  "ref/kapi_ref.jpg"
+ ],
+ "style": "Vertical 9:16 3D animated feature-film look (soft Pixar-style fur and lighting). Setting: an outdoor blue basketball court in a green park with big leafy trees, warm golden evening light, long soft shadows. The three characters must look exactly like the reference image: KAPI is a small capybara with a blue basketball jersey with the number 7, dark shorts and a red headband, calm and unbothered; BRUNO is a huge brown bear in a purple tank top and black shorts, slow and heavy; BUNNY is a white rabbit with long ears in a green jersey and white shorts, fast, bouncy and cocky. Keep their faces, colors, outfits and proportions identical in every shot. No text, no logos, no watermark, no subtitles on screen.",
+ "clips": [
+  {
+   "id": "c1",
+   "duration": 6,
+   "prompt": "Shot 1, wide establishing shot with a slow push-in. Bunny the white rabbit bounces excitedly on his toes at the center of the court, warming up and pumping his fists. Bruno the big brown bear stands next to him, slow and sleepy, and lets out a huge yawn. Court ambience, shoes squeaking, light crowd murmur. An excited sports commentator voice off-screen says: \"Welcome to the season opener!\""
+  },
+  {
+   "id": "c2",
+   "duration": 6,
+   "prompt": "Shot 2, medium tracking shot. Kapi the capybara in the blue number 7 jersey and red headband, holding a juicy slice of melon, strolls calmly toward the center of the court, slowly taking bites, not looking at anyone. He reaches the painted center circle and sits down right on it, still chewing. Bunny the white rabbit and Bruno the big bear stand in the background and stare at him in confusion. Soft footsteps, crunchy melon bites, quiet crowd murmur."
+  },
+  {
+   "id": "c3",
+   "duration": 6,
+   "prompt": "Shot 3, dynamic low-angle shot. A basketball is tossed high into the air from off-screen and flies up toward the warm evening sky. Bunny the white rabbit takes off in a blur, sprinting toward the ball at top speed; Bruno the big bear lumbers after him, huge and slow, shaking the ground a little. In the foreground Kapi stays seated on the center circle, calmly chewing his melon slice, not moving at all. Crowd cheers swell, a whistle blows, fast footsteps."
+  },
+  {
+   "id": "c4",
+   "duration": 6,
+   "prompt": "Shot 4, medium close-up. The basketball falls down out of the sky and lands softly right into Kapi's lap while he sits on the center circle. Bunny and Bruno skid to a stop in the background and freeze, jaws dropped. Kapi looks down at the ball, shrugs, and gently pushes it so that it rolls slowly across the court. A soft thud when the ball lands, crowd gasps."
+  },
+  {
+   "id": "c5",
+   "duration": 6,
+   "prompt": "Shot 5, tracking shot following the rolling basketball across the court toward the hoop. The ball rolls, hops up onto the rim and drops cleanly through the net with a swish. Then a cut to Kapi, still sitting on the center circle: he gives a tiny calm shrug and takes another bite of melon, while Bunny and Bruno stare in the background with open mouths. Crowd erupts in cheers. An excited sports commentator voice off-screen says: \"Zero steps. Zero effort. Two points.\""
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "fade": 0.2,
+ "tail_hold": 0.8,
+ "clips": [{"file":"clips/c1.mp4"},{"file":"clips/c2.mp4"},{"file":"clips/c3.mp4"},{"file":"clips/c4.mp4"},{"file":"clips/c5.mp4"}],
+ "transitions": ["fade","smoothleft","fade","smoothleft"],
+ "sfx": [
+   {"type":"whoosh","t":0.05,"vol":0.35},
+   {"type":"whoosh","clip":2,"t":-0.1,"vol":0.4},
+   {"type":"whoosh","clip":4,"t":-0.1,"vol":0.4},
+   {"type":"ding","clip":4,"t":3.1,"vol":0.5}
+ ],
+ "graphics": {
+  "score": {"clip":4,"t":3.1},
+  "title": {"t":[0.3, 2.9]},
+  "tags": [
+    {"t":[3.0,4.35],"name":"BUNNY","role":"THE SPEEDSTER","color":"3DDC84"},
+    {"t":[4.45,5.8],"name":"BRUNO","role":"THE WALL","color":"A56BFF"},
+    {"clip":1,"t":[0.4,2.2],"name":"KAPI #7","role":"THE CALM","color":"3DA5FF"}
+  ],
+  "captions": [
+    {"t":[3.6,5.9],"text":"WELCOME TO THE|SEASON OPENER!"},
+    {"clip":4,"t":[1.0,2.4],"text":"ZERO STEPS.","size":96},
+    {"clip":4,"t":[3.5,4.8],"text":"ZERO EFFORT.","size":96},
+    {"clip":4,"t":[4.85,6.9],"text":"TWO POINTS.","size":96}
+  ],
+  "punch": {"clip":4,"t":[3.0,3.45]},
+  "end": {"clip":4,"t":4.9}
+ }
+}
