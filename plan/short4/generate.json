@@ -1,0 +1,39 @@
+{
+ "refs": [
+  "ref/kapi_ref.jpg"
+ ],
+ "style": "Vertical 9:16 3D animated feature-film look (soft Pixar-style fur and lighting). Setting: an outdoor blue basketball court in a green park with big leafy trees, warm golden evening light, long soft shadows. The three characters must look exactly like the reference image: KAPI is a small capybara with a blue basketball jersey with the number 7, dark shorts and a red headband, calm and unbothered; BRUNO is a huge brown bear in a purple tank top and black shorts, slow and heavy; BUNNY is a white rabbit with long ears in a green jersey and white shorts, fast, bouncy and cocky. Keep their faces, colors, outfits and proportions identical in every shot. No text, no logos, no watermark, no subtitles on screen.",
+ "clips": [
+  {
+   "id": "c1",
+   "duration": 6,
+   "prompt": "Shot 1, close-up at the commentator desk at the edge of an outdoor basketball court. Rico, an excitable scarlet macaw parrot with red and blue feathers and a big headset, grips a microphone in his claw and talks faster and faster, feathers puffing up, getting louder and more desperate. A faint electronic microphone squeal starts in the background. Rico squawks in a high excited voice: \"What a game! What a game! I can't take it!\""
+  },
+  {
+   "id": "c2",
+   "duration": 6,
+   "prompt": "Shot 2, wide shot of the basketball court in warm golden evening light during a tight close game, Bruno the big brown bear and Bunny the white rabbit running end to end. The crowd cheers louder and louder and the commentator's voice off-screen gets shriller. Kapi the capybara in the blue number 7 jersey sits calmly on the sideline bench eating a slice of melon, one ear twitching at the noise. A microphone squeal grows louder and louder."
+  },
+  {
+   "id": "c3",
+   "duration": 6,
+   "prompt": "Shot 3, medium shot at the commentator desk. Rico the parrot jumps up and down flapping his wings, his headset crooked, screaming into the microphone, which shrieks with feedback. In the background everyone covers their ears: Bruno presses his huge paws over his ears, Bunny's long ears are folded flat, the crowd winces. Rico screams: \"Oh no! Oh no! Oh no!\""
+  },
+  {
+   "id": "c4",
+   "duration": 6,
+   "prompt": "Shot 4, medium low-angle shot at the commentator desk. Kapi the capybara in the blue number 7 jersey and red headband stands on a wooden stool at the desk, stretches up on his tiptoes and takes the microphone out of the claw of Rico, the large scarlet macaw parrot from the second reference image (red feathers, white face patch, black beak, blue and yellow wing feathers, blue headset with a microphone arm), who sits on the desk. Kapi looks at Rico with a deadpan face and says in a very calm, low, quiet voice: \"Chill.\" The squealing stops instantly. Total silence.",
+   "extra_refs": [
+    "ref/rico_ref.jpg"
+   ]
+  },
+  {
+   "id": "c5",
+   "duration": 6,
+   "prompt": "Shot 5, wide shot. Rico, the large scarlet macaw parrot from the second reference image (red feathers, white face patch, black beak, blue and yellow wing feathers, blue headset with a microphone arm) sits at the commentator desk, blinking, beak open, speechless. The whole crowd in the stands freezes for a second, then bursts out laughing. Then Kapi turns his back to the hoop and tosses the basketball over his shoulder without looking; the ball arcs across the court in slow motion and drops through the net as a buzzer sounds. Bruno and Bunny stare in disbelief. The crowd erupts in cheers and laughter, a loud buzzer.",
+   "extra_refs": [
+    "ref/rico_ref.jpg"
+   ]
+  }
+ ]
+}

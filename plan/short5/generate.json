@@ -1,0 +1,33 @@
+{
+ "refs": [
+  "ref/kapi_ref.jpg"
+ ],
+ "style": "Vertical 9:16 3D animated feature-film look (soft Pixar-style fur and lighting). Setting: an outdoor blue basketball court in a green park with big leafy trees, warm golden evening light, long soft shadows. The three characters must look exactly like the reference image: KAPI is a small capybara with a blue basketball jersey with the number 7, dark shorts and a red headband, calm and unbothered; BRUNO is a huge brown bear in a purple tank top and black shorts, slow and heavy; BUNNY is a white rabbit with long ears in a green jersey and white shorts, fast, bouncy and cocky. Keep their faces, colors, outfits and proportions identical in every shot. No text, no logos, no watermark, no subtitles on screen.",
+ "clips": [
+  {
+   "id": "c1",
+   "duration": 6,
+   "prompt": "Shot 1, medium shot. A raccoon in an orange jersey, completely exhausted, wobbles and then faints dramatically in slow motion, flopping onto his back on the court with one paw on his forehead and his tongue out, like a soap-opera actor. Court ambience, a slow dramatic sting. An excited sports commentator voice off-screen cries: \"And he's down! He's down!\""
+  },
+  {
+   "id": "c2",
+   "duration": 6,
+   "prompt": "Shot 2, wide shot, orange evening light. Bruno the big brown bear is bent over with his hands on his knees, panting heavily. Other tired animal players in jerseys lie flat on the court or sit slumped on the bench with towels over their heads. The whole team is wrecked. Heavy breathing, a slow whistle. An excited sports commentator voice off-screen says wearily: \"Overtime. Everyone is exhausted.\""
+  },
+  {
+   "id": "c3",
+   "duration": 6,
+   "prompt": "Shot 3, medium shot. Kapi the capybara in the blue number 7 jersey and red headband sits on the bench, spotless and perfectly rested, taking a bite of melon. He slowly stands up, stretches one arm lazily and picks up the basketball. Bruno and the others stare at him in amazement, because he hasn't even broken a sweat. An excited sports commentator voice off-screen says: \"Kapi is fresh. Kapi never ran.\""
+  },
+  {
+   "id": "c4",
+   "duration": 6,
+   "prompt": "Shot 4, tracking shot following the ball. From the half-court line Kapi gives the basketball one lazy underhand toss without even bending his knees. The ball floats in a huge slow arc across the entire court in slow motion, over the heads of the astonished players, toward the far hoop, the golden sun behind it. The crowd goes quiet, a soft whoosh."
+  },
+  {
+   "id": "c5",
+   "duration": 6,
+   "prompt": "Shot 5, medium close-up. The ball drops through the net with a clean swish. The crowd erupts and all the players fall over in shock. Kapi at half court gives a tiny shrug, walks back to the bench, sits down, picks up his melon slice and takes a bite. An excited sports commentator voice off-screen says: \"Season one, game one. Nobody has any idea what just happened.\""
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "refs": [
+  "ref/kapi_ref.jpg"
+ ],
+ "style": "Vertical 9:16 3D animated feature-film look (soft Pixar-style fur and lighting). Setting: an outdoor blue basketball court in a green park with big leafy trees, warm golden evening light, long soft shadows. The three characters must look exactly like the reference image: KAPI is a small capybara with a blue basketball jersey with the number 7, dark shorts and a red headband, calm and unbothered; BRUNO is a huge brown bear in a purple tank top and black shorts, slow and heavy; BUNNY is a white rabbit with long ears in a green jersey and white shorts, fast, bouncy and cocky. Keep their faces, colors, outfits and proportions identical in every shot. No text, no logos, no watermark, no subtitles on screen.",
+ "clips": [
+  {
+   "id": "c1",
+   "duration": 6,
+   "prompt": "Shot 1, low-angle wide shot looking up at Bruno the huge brown bear standing in the middle of the painted key under the hoop, arms crossed, absolutely motionless like a mountain, long soft shadows across the blue court. In the distance Bunny the white rabbit dribbles the basketball toward him at high speed. Tense quiet wind, dribbling sounds, distant crowd murmur. An excited sports commentator voice off-screen says: \"Nobody gets past Bruno!\""
+  },
+  {
+   "id": "c2",
+   "duration": 6,
+   "prompt": "Shot 2, medium side shot. A tiny grey squirrel in a yellow jersey dashes toward Bruno in a fast zigzag dribble, quick as lightning, while Bruno the huge brown bear keeps his arms crossed and only slowly turns his head to follow. The squirrel runs straight into Bruno's big soft belly with a comic boing, bounces back and lands sitting on his fluffy tail, dazed. Bruno blinks slowly, unbothered. Quick footsteps, a boing, a soft thud, a few crowd giggles."
+  },
+  {
+   "id": "c3",
+   "duration": 6,
+   "prompt": "Shot 3, medium shot. A raccoon in an orange jersey tries a fancy spinning dribble around Bruno; Bruno just turns his head slowly to follow, the raccoon spins too long, gets dizzy, wobbles into Bruno's leg and hugs it. Then a fox in a red jersey jumps to shoot over Bruno, bounces off his tummy and lands flat on his back. Bruno blinks slowly, completely calm. Boing sounds, thuds, a few crowd giggles."
+  },
+  {
+   "id": "c4",
+   "duration": 6,
+   "prompt": "Shot 4, medium shot. The raccoon in the orange jersey stops in front of huge Bruno, looks up at him, sighs, drops the basketball and sits down on the court right next to Bruno's big feet, crossing his legs. Bruno the huge brown bear stands with his arms crossed and slowly looks down at the raccoon, then blinks slowly. Quiet park ambience, a tired sigh."
+  },
+  {
+   "id": "c5",
+   "duration": 6,
+   "prompt": "Shot 5, low-angle shot. In a silent arena Bruno slowly lifts one huge foot and takes exactly one step forward. The ground shakes with a heavy thump, and the fox, the raccoon and the squirrel sitting at his feet jump up in surprise and run away in all directions. The crowd gasps. An excited sports commentator voice off-screen whispers, then shouts: \"He moved. Everyone panic!\""
+  }
+ ]
+}

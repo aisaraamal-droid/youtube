@@ -1,0 +1,33 @@
+{
+ "refs": [
+  "ref/kapi_ref.jpg"
+ ],
+ "style": "Vertical 9:16 3D animated feature-film look (soft Pixar-style fur and lighting). Setting: an outdoor blue basketball court in a green park with big leafy trees, warm golden evening light, long soft shadows. The three characters must look exactly like the reference image: KAPI is a small capybara with a blue basketball jersey with the number 7, dark shorts and a red headband, calm and unbothered; BRUNO is a huge brown bear in a purple tank top and black shorts, slow and heavy; BUNNY is a white rabbit with long ears in a green jersey and white shorts, fast, bouncy and cocky. Keep their faces, colors, outfits and proportions identical in every shot. No text, no logos, no watermark, no subtitles on screen.",
+ "clips": [
+  {
+   "id": "c1",
+   "duration": 6,
+   "prompt": "Shot 1, extreme low-angle slow-motion shot. Bunny the white rabbit in the green jersey launches off the court in an enormous leap toward the hoop, holding the basketball high in one paw, his long ears streaming behind him, golden evening light flaring behind the rim. Everything moves in dramatic slow motion, dust floating in the air. Deep dramatic drums build. An excited sports commentator voice off-screen screams: \"He's going up! He's going up!\""
+  },
+  {
+   "id": "c2",
+   "duration": 6,
+   "prompt": "Shot 2, wide side shot. Bunny the rabbit hangs at the very top of an impossibly high jump right next to the rim, the ball above his head. Far below on the court, Bruno the big brown bear looks up with his mouth wide open, and Kapi the capybara in the blue number 7 jersey sits on the bench calmly eating a slice of melon without even looking up. The crowd gasps. Slow motion, deep dramatic drums. An excited sports commentator voice off-screen shouts: \"Nobody has ever jumped this high!\""
+  },
+  {
+   "id": "c3",
+   "duration": 6,
+   "prompt": "Shot 3, medium-wide side shot at rim height. Bunny the white rabbit slams the basketball down through the hoop with a loud bang, the whole backboard shakes and the ball drops out through the net. But Bunny flips over and ends up stuck upside down in the hoop, his legs sticking up, his jersey caught on the rim and his long ears dangling down through the net. The rim creaks and swings. The crowd cheers, then falls into an awkward silence. A quiet sports commentator voice off-screen says: \"And... he's stuck.\""
+  },
+  {
+   "id": "c4",
+   "duration": 6,
+   "prompt": "Shot 4, low-angle medium shot from below the hoop. Kapi the capybara in the blue number 7 jersey and red headband strolls calmly under the hoop, takes a fresh slice of melon from behind his back and holds it up high toward Bunny, who dangles from the rim above with his eyes locked on the melon and his ears drooping. Bruno the big bear stands behind Kapi with his arms crossed and watches. Quiet crowd murmur, the rim creaking, Bunny whimpering softly."
+  },
+  {
+   "id": "c5",
+   "duration": 6,
+   "prompt": "Shot 5, medium-wide shot under the hoop. Bunny wriggles loose from the rim and tumbles down, landing with a soft bounce on the thick blue pad around the hoop pole. Kapi the capybara in the blue number 7 jersey hands Bunny the slice of melon, and Bunny sits on the pad holding it, dazed but happy. Bruno the big bear stands behind with his arms crossed, shaking his head. The crowd laughs and cheers. An excited sports commentator voice off-screen says dryly: \"The dunk... is technically complete.\""
+  }
+ ]
+}

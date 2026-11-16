@@ -1,0 +1,31 @@
+{
+ "fade": 0.2,
+ "tail_hold": 1.4,
+ "clips": [{"file":"clips/c1.mp4"},{"file":"clips/c2.mp4"},{"file":"clips/c3.mp4"},{"file":"clips/c4.mp4"},{"file":"clips/c5.mp4"}],
+ "transitions": ["fade","smoothleft","fade","smoothleft"],
+ "sfx": [
+   {"type":"whoosh","t":0.05,"vol":0.35},
+   {"type":"whoosh","clip":2,"t":-0.1,"vol":0.4},
+   {"type":"whoosh","clip":4,"t":-0.1,"vol":0.4},
+   {"type":"ding","clip":4,"t":5.1,"vol":0.5}
+ ],
+ "graphics": {
+  "score": {"home":4,"away":6,"events":[{"clip":4,"t":5.1,"side":"home","pts":2}]},
+  "title": {"t":[0.3, 2.4], "main":"KAPI IN THE LEAGUE", "sub":"RICO LOSES IT · EPISODE 4"},
+  "tags": [
+    {"clip":1,"t":[0.4,2.2],"name":"KAPI #7","role":"THE CALM","color":"3DA5FF"}
+  ],
+  "captions": [
+    {"t":[0.4,1.1],"text":"WHAT A GAME!"},
+    {"t":[1.1,2.2],"text":"WHAT A GAME!"},
+    {"t":[2.25,3.6],"text":"I CAN'T TAKE IT!"},
+    {"clip":2,"t":[0.35,1.0],"text":"OH NO!"},
+    {"clip":2,"t":[1.65,2.5],"text":"OH NO!"},
+    {"clip":2,"t":[2.55,4.45],"text":"OH NO..."},
+    {"clip":3,"t":[3.8,5.3],"text":"CHILL.","size":110,"who":"KAPI","color":"3DA5FF"},
+    {"clip":4,"t":[0.25,1.6],"text":"...","size":110}
+  ],
+  "punch": {"clip":4,"t":[4.9, 5.35]},
+  "end": {"clip":4,"t":5.4,"line1":"TO BE CONTINUED...","line2":"NEXT: OVERTIME","line3":"FOLLOW KAPI'S WORLD"}
+ }
+}

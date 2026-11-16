@@ -1,0 +1,25 @@
+{
+ "fade": 0.2,
+ "tail_hold": 0.8,
+ "clips": [{"file":"clips/c1.mp4"},{"file":"clips/c2.mp4"},{"file":"clips/c3.mp4"},{"file":"clips/c4.mp4"},{"file":"clips/c5.mp4"}],
+ "transitions": ["fade","smoothleft","fade","smoothleft"],
+ "sfx": [
+   {"type":"whoosh","t":0.05,"vol":0.35},
+   {"type":"whoosh","clip":2,"t":-0.1,"vol":0.4},
+   {"type":"whoosh","clip":4,"t":-0.1,"vol":0.4}
+ ],
+ "graphics": {
+  "score": {"home":2,"away":2,"events":[]},
+  "title": {"t":[0.3, 2.4], "main":"KAPI IN THE LEAGUE", "sub":"BRUNO'S WALL · EPISODE 3"},
+  "tags": [
+    {"t":[2.45,3.6],"name":"BRUNO","role":"THE WALL","color":"A56BFF"}
+  ],
+  "captions": [
+    {"t":[3.65,5.8],"text":"NOBODY GETS|PAST BRUNO!"},
+    {"clip":4,"t":[3.85,4.65],"text":"HE MOVED."},
+    {"clip":4,"t":[4.7,6.9],"text":"EVERYONE|PANIC!","size":96}
+  ],
+  "punch": {"clip":4,"t":[3.7, 4.2]},
+  "end": {"clip":4,"t":4.9,"line1":"TO BE CONTINUED...","line2":"NEXT: RICO LOSES IT","line3":"FOLLOW KAPI'S WORLD"}
+ }
+}

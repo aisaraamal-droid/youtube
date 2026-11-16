@@ -29,7 +29,7 @@ def data_uri(path):
 def submit(spec, clip_id):
     clip = next(c for c in spec["clips"] if c["id"] == clip_id)
     content = [{"type": "text", "text": spec["style"].strip() + "\n\n" + clip["prompt"].strip()}]
-    for ref in spec["refs"]:
+    for ref in spec["refs"] + clip.get("extra_refs", []):  # extra_refs: per-clip images (e.g. Rico)
         content.append({
             "type": "image_url",
             "image_url": {"url": data_uri(os.path.join(HERE, ref))},

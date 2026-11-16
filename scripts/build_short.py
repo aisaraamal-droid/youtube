@@ -110,29 +110,47 @@ def main():
     # ---- graphics ---------------------------------------------------------
     a = Ass()
     g = CFG["graphics"]
-    # scoreboard (persistent)
+    # scoreboard (persistent). "score" is either the legacy {"clip","t"} (home 0 -> 2 once) or
+    # {"home": 4, "away": 6, "events": [{"clip": 4, "t": 3.1, "side": "home", "pts": 2}, ...]}
     sb_x, sb_y = 56, 150
-    st = T(g["score"])
+    sc = g["score"]
+    if "events" not in sc:
+        sc = {"home": 0, "away": 0, "events": [{"clip": sc["clip"], "t": sc["t"], "side": "home", "pts": 2}]}
     a.box(0.2, total, sb_x, sb_y, 600, 96, 24, "0B1630", alpha=0x28, slide=40)
     a.box(0.2, total, sb_x, sb_y, 190, 96, 24, "F5B700", alpha=0x00, slide=40)
     a.text(0.2, total, sb_x + 95, sb_y + 48, "LEAGUE", 38, color="0B1630", an=5, slide=40, spacing=2)
     a.text(0.2, total, sb_x + 215, sb_y + 48, "HOME", 34, color="C9D4F0", an=4, slide=40, font=FONT_B)
-    a.text(0.2, st, sb_x + 345, sb_y + 48, "0", 56, an=5, slide=40)
     a.text(0.2, total, sb_x + 385, sb_y + 46, "-", 44, color="8FA0CC", an=5, slide=40)
-    a.text(0.2, total, sb_x + 425, sb_y + 48, "0", 56, an=5, slide=40)
     a.text(0.2, total, sb_x + 470, sb_y + 48, "AWAY", 34, color="C9D4F0", an=4, slide=40, font=FONT_B)
-    # score change: home 0 -> 2 with pop + gold flash + "+2"
-    a.raw(f"Dialogue: 3,{ts(st)},{ts(total)},Txt,,0,0,0,,{{\\an5\\pos({sb_x+345},{sb_y+48})\\fn{FONT}\\fs56\\1c&H{bgr('F5B700')}&"
-          f"\\fscx160\\fscy160\\t(0,350,\\fscx100\\fscy100)}}2")
-    a.raw(f"Dialogue: 3,{ts(st)},{ts(st+1.6)},Txt,,0,0,0,,{{\\an5\\move({sb_x+345},{sb_y+130},{sb_x+345},{sb_y+210},0,900)"
-          f"\\fn{FONT}\\fs64\\1c&H{bgr('F5B700')}&\\bord3\\3c&H{bgr('0B1630')}&\\fad(80,500)}}+2")
+    sx = {"home": sb_x + 345, "away": sb_x + 425}
+    cur = {"home": sc.get("home", 0), "away": sc.get("away", 0)}
+    seg0 = {"home": 0.2, "away": 0.2}
+    gold = {"home": False, "away": False}
 
-    # title
+    def score_seg(side, t0, t1):
+        if gold[side]:  # changed value: gold, pops in
+            a.raw(f"Dialogue: 3,{ts(t0)},{ts(t1)},Txt,,0,0,0,,{{\\an5\\pos({sx[side]},{sb_y+48})\\fn{FONT}\\fs56\\1c&H{bgr('F5B700')}&"
+                  f"\\fscx160\\fscy160\\t(0,350,\\fscx100\\fscy100)}}{cur[side]}")
+        else:
+            a.text(t0, t1, sx[side], sb_y + 48, str(cur[side]), 56, an=5, slide=40)
+
+    for ev in sorted(sc["events"], key=T):
+        te, side = T(ev), ev["side"]
+        score_seg(side, seg0[side], te)
+        cur[side] += ev["pts"]
+        seg0[side], gold[side] = te, True
+        a.raw(f"Dialogue: 3,{ts(te)},{ts(te+1.6)},Txt,,0,0,0,,{{\\an5\\move({sx[side]},{sb_y+130},{sx[side]},{sb_y+210},0,900)"
+              f"\\fn{FONT}\\fs64\\1c&H{bgr('F5B700')}&\\bord3\\3c&H{bgr('0B1630')}&\\fad(80,500)}}+{ev['pts']}")
+    for side in ("home", "away"):
+        score_seg(side, seg0[side], total)
+
+    # title (defaults are the Episode 1 texts)
     ts0, ts1 = T(g["title"])
     a.box(ts0, ts1, 56, 330, 760, 170, 28, "0B1630", alpha=0x30, slide=60, fin=0.3, fout=0.3)
     a.box(ts0, ts1, 56, 330, 14, 170, 7, "F5B700", alpha=0x00, slide=60, fin=0.3, fout=0.3)
-    a.text(ts0, ts1, 96, 356, "KAPI IN THE LEAGUE", 66, slide=60, fin=0.3, fout=0.3)
-    a.text(ts0, ts1, 98, 438, "SEASON OPENER · EPISODE 1", 36, color="F5B700", font=FONT_B, slide=60, fin=0.3, fout=0.3, spacing=3)
+    a.text(ts0, ts1, 96, 356, g["title"].get("main", "KAPI IN THE LEAGUE"), 66, slide=60, fin=0.3, fout=0.3)
+    a.text(ts0, ts1, 98, 438, g["title"].get("sub", "SEASON OPENER · EPISODE 1"), 36, color="F5B700", font=FONT_B,
+           slide=60, fin=0.3, fout=0.3, spacing=3)
 
     # name tags
     for tg in g["tags"]:
@@ -146,8 +164,9 @@ def main():
     # Rico captions (uppercase, left of the Shorts button column)
     for cp in g["captions"]:
         t0, t1 = T(cp)
-        a.box(t0, t1, 405, 1236, 190, 58, 29, "F5B700", alpha=0x00, fin=0.12, fout=0.12)
-        a.text(t0, t1, 500, 1265, "RICO", 36, color="0B1630", an=5, fin=0.12, fout=0.12, spacing=4)
+        # speaker plate: Rico by default; {"who": "KAPI", "color": "3DA5FF"} for another voice
+        a.box(t0, t1, 405, 1236, 190, 58, 29, cp.get("color", "F5B700"), alpha=0x00, fin=0.12, fout=0.12)
+        a.text(t0, t1, 500, 1265, cp.get("who", "RICO"), 36, color="0B1630", an=5, fin=0.12, fout=0.12, spacing=4)
         a.text(t0, t1, 500, 1400, cp["text"].replace("|", "\\N"), cp.get("size", 84), an=5, fin=0.08, fout=0.1, bord=8,
                bordc="0B1630", shad=3, layer=4,
                extra="\\fscx90\\fscy90\\t(0,140,\\fscx100\\fscy100)")
@@ -155,9 +174,10 @@ def main():
     # end card (top part of frame so Kapi's last shrug stays visible)
     e0 = T(g["end"])
     a.box(e0, total, 0, 290, W, 400, 0, "0B1630", alpha=0x4C, fin=0.35, fout=0.0)
-    a.text(e0 + 0.15, total, 500, 390, "TO BE CONTINUED...", 72, an=5, fin=0.3, fout=0.0)
-    a.text(e0 + 0.35, total, 500, 490, "NEXT: BUNNY'S BIG DUNK", 46, color="F5B700", an=5, fin=0.3, fout=0.0, font=FONT_B, spacing=2)
-    a.text(e0 + 0.55, total, 500, 585, "FOLLOW KAPI'S WORLD", 36, color="C9D4F0", an=5, fin=0.3, fout=0.0, font=FONT_B, spacing=4)
+    ge = g["end"]
+    a.text(e0 + 0.15, total, 500, 390, ge.get("line1", "TO BE CONTINUED..."), 72, an=5, fin=0.3, fout=0.0)
+    a.text(e0 + 0.35, total, 500, 490, ge.get("line2", "NEXT: BUNNY'S BIG DUNK"), 46, color="F5B700", an=5, fin=0.3, fout=0.0, font=FONT_B, spacing=2)
+    a.text(e0 + 0.55, total, 500, 585, ge.get("line3", "FOLLOW KAPI'S WORLD"), 36, color="C9D4F0", an=5, fin=0.3, fout=0.0, font=FONT_B, spacing=4)
 
     ass = os.path.join(HERE, "work", "graphics.ass")
     open(ass, "w").write(a.render())

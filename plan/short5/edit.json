@@ -1,0 +1,32 @@
+{
+ "fade": 0.2,
+ "tail_hold": 0.8,
+ "clips": [{"file":"clips/c1.mp4"},{"file":"clips/c2.mp4"},{"file":"clips/c3.mp4"},{"file":"clips/c4.mp4"},{"file":"clips/c5.mp4"}],
+ "transitions": ["fade","smoothleft","fade","smoothleft"],
+ "sfx": [
+   {"type":"whoosh","t":0.05,"vol":0.35},
+   {"type":"whoosh","clip":2,"t":-0.1,"vol":0.4},
+   {"type":"whoosh","clip":4,"t":-0.1,"vol":0.4},
+   {"type":"ding","clip":4,"t":0.2,"vol":0.5}
+ ],
+ "graphics": {
+  "score": {"home":6,"away":6,"events":[{"clip":4,"t":0.2,"side":"home","pts":3}]},
+  "title": {"t":[0.3, 2.4], "main":"KAPI IN THE LEAGUE", "sub":"OVERTIME · EPISODE 5"},
+  "tags": [
+    {"clip":2,"t":[0.4,2.2],"name":"KAPI #7","role":"STEPS TODAY: 0","color":"3DA5FF"}
+  ],
+  "captions": [
+    {"t":[2.9,4.3],"text":"AND HE'S DOWN!"},
+    {"t":[4.65,5.85],"text":"HE'S DOWN!"},
+    {"clip":1,"t":[2.3,3.2],"text":"OVERTIME..."},
+    {"clip":1,"t":[3.3,5.8],"text":"EVERYONE IS|EXHAUSTED."},
+    {"clip":2,"t":[3.3,4.6],"text":"KAPI IS FRESH."},
+    {"clip":2,"t":[4.85,5.85],"text":"KAPI NEVER RAN."},
+    {"clip":4,"t":[0.85,1.85],"text":"SEASON ONE,"},
+    {"clip":4,"t":[1.9,3.2],"text":"GAME ONE."},
+    {"clip":4,"t":[3.5,6.9],"text":"NOBODY HAS ANY IDEA|WHAT JUST HAPPENED.","size":76}
+  ],
+  "punch": {"clip":4,"t":[0.1, 0.55]},
+  "end": {"clip":4,"t":5.0,"line1":"SEASON 1 FINALE","line2":"MORE KAPI SOON","line3":"FOLLOW KAPI'S WORLD"}
+ }
+}

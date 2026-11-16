@@ -1,0 +1,30 @@
+{
+ "fade": 0.2,
+ "tail_hold": 0.8,
+ "clips": [{"file":"clips/c1.mp4"},{"file":"clips/c2.mp4"},{"file":"clips/c3.mp4"},{"file":"clips/c4.mp4"},{"file":"clips/c5.mp4"}],
+ "transitions": ["fade","smoothleft","fade","smoothleft"],
+ "sfx": [
+   {"type":"whoosh","t":0.05,"vol":0.35},
+   {"type":"whoosh","clip":2,"t":-0.1,"vol":0.4},
+   {"type":"whoosh","clip":4,"t":-0.1,"vol":0.4},
+   {"type":"ding","clip":2,"t":0.6,"vol":0.5}
+ ],
+ "graphics": {
+  "score": {"home":2,"away":0,"events":[{"clip":2,"t":0.6,"side":"away","pts":2}]},
+  "title": {"t":[0.3, 2.4], "main":"KAPI IN THE LEAGUE", "sub":"BUNNY'S BIG DUNK · EPISODE 2"},
+  "tags": [
+    {"clip":3,"t":[0.4,2.2],"name":"KAPI #7","role":"THE CALM","color":"3DA5FF"}
+  ],
+  "captions": [
+    {"t":[3.0,4.15],"text":"HE'S GOING UP!"},
+    {"t":[4.25,5.7],"text":"HE'S GOING UP!"},
+    {"clip":1,"t":[2.3,5.8],"text":"NOBODY HAS EVER|JUMPED THIS HIGH!"},
+    {"clip":2,"t":[3.8,4.9],"text":"AND..."},
+    {"clip":2,"t":[4.95,5.85],"text":"HE'S STUCK."},
+    {"clip":4,"t":[2.7,4.1],"text":"THE DUNK..."},
+    {"clip":4,"t":[4.15,6.9],"text":"IS TECHNICALLY|COMPLETE.","size":96}
+  ],
+  "punch": {"clip":2,"t":[0.3, 0.8]},
+  "end": {"clip":4,"t":4.9,"line1":"TO BE CONTINUED...","line2":"NEXT: BRUNO'S WALL","line3":"FOLLOW KAPI'S WORLD"}
+ }
+}
