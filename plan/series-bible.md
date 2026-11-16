@@ -2,12 +2,14 @@
 
 Format: 30-second Shorts, 9:16. Each Short = 2 clips of 15 s (setup, then punchline). Audience: everyone, not made for kids (humor works for adults and kids; no scary or distressing scenes). Language: English voice/captions, Russian notes for the owner.
 
-## Characters (keep looks identical in every clip, use one approved reference image each)
+## Characters (match the owner's reference frame; keep looks identical in every clip, one approved reference image each)
 
-- **Kapi**, capybara, calm to the point of absurdity. Never rushes, always scores in the end.
-- **Flo**, flamingo forward, fast and cocky, always misses the big moment.
-- **Teo**, tortoise defender, slow but nothing gets past him.
-- **Rico**, parrot commentator, dramatic, narrates every move like a final.
+- **Kapi**: capybara, blue jersey number 7, red headband. Calm to the point of absurdity, never rushes, always scores in the end.
+- **Bruno**: big brown bear, purple tank top and black shorts. The wall: huge, slow, nothing gets past him. (Replaces the tortoise Teo in the week 1 scripts: he "moves one pace".)
+- **Bunny**: white rabbit, green jersey. Fast and cocky, misses the big moment. (Replaces the flamingo Flo: he hangs on the rim by his paws.)
+- **Rico**: parrot commentator, voice only at first (off-screen), dramatic.
+
+Names are placeholders until the owner confirms.
 
 ## Rules that keep the channel compliant
 
