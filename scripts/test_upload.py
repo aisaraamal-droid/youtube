@@ -96,7 +96,7 @@ try:
 except yt_creds.CredentialsError as e:
     msg = str(e)
     check("invalid_grant explains Testing/7 days and the fix",
-          "In production" in msg and "auth.py" in msg and "REFRESH-VALUE-456" not in msg)
+          "7 days" in msg and "auth.py" in msg and "REFRESH-VALUE-456" not in msg)
 finally:
     Credentials.refresh = orig
 clear_env()

@@ -84,9 +84,10 @@ def load_credentials(refresh=True):
             if "invalid_grant" in text:
                 raise CredentialsError(
                     "Google refused the refresh token (invalid_grant). It was revoked or it expired. "
-                    "Most common cause: the OAuth consent screen is still in 'Testing', where refresh "
-                    "tokens die after 7 days. Switch it to 'In production', run scripts/auth.py again on "
-                    f"your computer and update {ENV_JSON}.") from None
+                    "Most common cause: the OAuth consent screen is in 'Testing', where refresh "
+                    "tokens die 7 days after they were issued. Remove the app's access at "
+                    "myaccount.google.com/permissions, run scripts/auth.py again on your computer "
+                    f"and update {ENV_JSON} (plan/cloud-upload.md).") from None
             if "invalid_client" in text or "unauthorized_client" in text:
                 raise CredentialsError(
                     "Google does not recognise the OAuth client (invalid_client). The client_id / "
