@@ -7,12 +7,13 @@ Plans, scripts and finished videos for the Kapi's World YouTube channel.
 ## Layout
 
 - `plan/` content plan and episode scripts
-- `scripts/` pipeline code (generate, edit with ffmpeg, upload)
+- `scripts/` pipeline code (generate, edit with ffmpeg, upload); `make_theme.py` renders our original theme, `mix_music.py` adds a ducked music bed
+- `music/` track registry (`tracks.csv`), our own theme in `music/original/`; other audio files are git-ignored
 - `videos/` finished videos (large files: prefer Releases or Git LFS)
 
 ## Workflow
 
 1. Scripts are written into `plan/`, the owner approves them.
-2. Clips are generated, then edited with ffmpeg.
+2. Clips are generated, then edited with ffmpeg (join the two 15 s clips, then `scripts/mix_music.py` on the joined 30 s file).
 3. The owner reviews the final video.
 4. Upload is private with metadata and the made-for-kids flag; publishing is done by the owner after approval.

@@ -1,0 +1,4 @@
+file,title,artist_or_source,source_url,license,attribution_required,attribution_text,downloaded_on,used_in,notes
+music/original/kapi-theme.mp3,Kapi theme (full),Original composition rendered by scripts/make_theme.py,https://github.com/aisaraamal-droid/youtube/blob/main/scripts/make_theme.py,Own work (no third-party material),no,,2026-11-16,all Shorts,32 bars 108 BPM E minor; loops
+music/original/kapi-theme-bed.mp3,Kapi theme (bed),Original composition rendered by scripts/make_theme.py,https://github.com/aisaraamal-droid/youtube/blob/main/scripts/make_theme.py,Own work (no third-party material),no,,2026-11-16,all Shorts,same without lead; for under narration
+music/original/kapi-sting.mp3,Kapi sting,Original composition rendered by scripts/make_theme.py,https://github.com/aisaraamal-droid/youtube/blob/main/scripts/make_theme.py,Own work (no third-party material),no,,2026-11-16,punchline/closing,about 5 s

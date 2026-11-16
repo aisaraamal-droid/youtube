@@ -14,3 +14,12 @@ raw/
 *.tmp
 __pycache__/
 .venv/
+
+# Music: the registry (music/tracks.csv) is committed, the audio files are not
+# (library licences usually forbid redistributing the files themselves).
+music/*.mp3
+music/*.wav
+music/*.m4a
+music/*.flac
+music/*.ogg
+music/*.aac
