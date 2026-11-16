@@ -1,0 +1,16 @@
+# Secrets: this repository is PUBLIC. Never commit these.
+client_secret*.json
+token*.json
+credentials*.json
+*.pickle
+.env
+.env.*
+secrets/
+*.key
+
+# Working files (large, regenerated)
+work/
+raw/
+*.tmp
+__pycache__/
+.venv/
